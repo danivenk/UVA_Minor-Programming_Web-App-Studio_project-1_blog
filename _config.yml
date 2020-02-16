@@ -33,6 +33,8 @@ github_username:  jekyll
 theme: minima
 plugins:
   - jekyll-feed
+  - japanese_dates
+  - wareki
 whitelist:
   - japanese_dates
   - wareki
