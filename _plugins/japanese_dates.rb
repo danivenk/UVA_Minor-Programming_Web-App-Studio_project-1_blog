@@ -13,9 +13,6 @@ module Jekyll
             d = Date.parse(date.to_s)
             d.strftime("%Jf")
         end
-        def test(date)
-            "hi"
-        end
     end        
 end
 
