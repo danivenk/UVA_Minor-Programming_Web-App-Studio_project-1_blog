@@ -1,7 +1,6 @@
 /* Dani van Enk, 11823526 */
 
 /* predefining some mulitple used colors */
-$carousel-color: #AAA!important;
 $main-color: #E06;
 
 
@@ -14,18 +13,6 @@ $main-color: #E06;
 %black {
     color: #000;
 }
-
-// /* button border color inheritance */
-// %button_border {
-//     border-color: darken( $main-color, 10%)!important;
-// }
-
-// /* button when clicked inheritance */
-// %click {
-//     background-color: darken( $main-color, 7%)!important;
-//     @extend %button_border;
-//     box-shadow: 0 0 0 0.2rem rgb(lighten( $main-color, 10%), .5)!important;
-// }
 
 /* container style */
 #container {
@@ -61,18 +48,6 @@ $main-color: #E06;
         font-weight: bold;
     }
 
-    .carousel-indicators li {
-        background-color: $carousel-color;
-    }
-    
-    .carousel-control-prev-icon {
-        background-color: $carousel-color;
-    }
-
-    .carousel-control-next-icon {
-        background-color: $carousel-color;
-    }
-
     .row {
         margin-top: 2%;
         margin-bottom: 2%;
@@ -84,42 +59,8 @@ $main-color: #E06;
         }
     }
 
-    ul li {
-        list-style-type: none;
-        
-        a {
-            @extend %black;
-        }
-
-        a:hover{
-            @extend %black;
-        }
-    }
-
-    #table {
-        display: none;
-    }
-
-    // .btn-primary {
-    //     background-color: $main-color;
-    //     @extend %button_border
-    // }
-
-    // .btn-primary:hover {
-    //     background-color: darken( $main-color, 5%);
-    //     @extend %button_border;
-    // }
-
-    // .btn-primary:active, .btn-primary:focus {
-    //     @extend %click;
-    // }
-
-    // .protagonist div {
-    //     margin: 1% 0;
-    // }
-
-    .type {
-        font-weight: bold;
+    .CR {
+        padding: 1%;
     }
 
     footer {

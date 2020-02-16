@@ -32,8 +32,8 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    {% for page in site.pages %}
-                        {% if page.title != "" and page.title != "README" %}
+                    {% for page in site.html_pages %}
+                        {% if page.title != nil %}
                             <a class="nav-item nav-link" href="{{ page.url }}">{{ page.title}}</a>
                         {% endif %}
                     {% endfor %}

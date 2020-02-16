@@ -1,0 +1,25 @@
+---
+layout: skeleton
+---
+
+<div class="row">
+    <div class="col-sm-12">
+        <h1>{{ page.title }}</h1>
+        <hr>
+        {{ content }}
+    </div>
+</div>
+<div class="row">
+    {% for post in site.posts %}
+    <div class="col-sm-4">
+        <a href="{{ post.url }}">
+            <h4>{{ post.title }}</h4>
+        </a>
+        <time datetime="{{ post.date | date:'%F' }}">{{ post.date | JapaneseDate }}</time>
+        {{ post.excerpt }}
+        <a href="{{ post.url }}" 　class="CR">
+            読みを続く
+        </a>
+    </div>
+    {% endfor %}
+</div>

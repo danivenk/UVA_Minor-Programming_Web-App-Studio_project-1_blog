@@ -1,0 +1,15 @@
+<div class="col-sm-2">
+    <h4>最近の投稿</h4>
+    {% for post in site.posts limit: 5 %}
+        <div>
+            <a href="{{ post.url }}">
+                <hr>
+                <h4>{{ post.title }}</h4>
+                <time datetime="{{ post.date | date:'%F' }}">{{ post.date | JapaneseDate }}</time>
+                <hr>
+            </a>
+        </div>
+    {% endfor %}
+
+    <a href="/posts/">See more...</a>
+</div>
