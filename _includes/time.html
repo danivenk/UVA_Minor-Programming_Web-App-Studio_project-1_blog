@@ -1,0 +1,21 @@
+{% assign date = include.date %}
+{% assign RW = "2019-05-01" %}
+{% assign HS = "1989-01-08" | date:'%s' %}
+{% assign SW = "1926-12-25" | date:'%s' %}
+
+{% assign date_year = date | date:"%Y" %}
+{% assign RW_year = RW | date:"%Y" %}
+{% assign HS_year = HS | date:"%Y" %}
+{% assign SW_year = SW | date:"%Y" %}
+
+<time datetime="{{ date | date:'%F' }}">
+{% if date | date:'%s' > RW | date:'%s' %}
+    令和{{ date_year | minus:RW_year }}年
+{% elsif RW | date:'%s' > date | date:'%s' and date | date:'%s' > HS | date:'%s' %}
+    平成{{ date_year | minus:HS_year }}年
+{% elsif HS | date:'%s' > date | date:'%s' and date | date:'%s' > SW | date:'%s' %}
+    昭和{{ date_year | minus:SW_year }}年
+{% else %}
+    {{ date_year }}
+{% endif %}
+{{date | date:"%m月%d日" }}</time>

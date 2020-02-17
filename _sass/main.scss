@@ -14,6 +14,19 @@ $main-color: #E06;
     color: #000;
 }
 
+/* button border color inheritance */
+%button_border {
+    border-color: darken( $main-color, 10%)!important;
+}
+
+/* button when clicked inheritance */
+%click {
+    background-color: darken( $main-color, 7%)!important;
+    @extend %button_border;
+    box-shadow: 0 0 0 0.2rem lighten( $main-color, 10%)!important;
+}
+
+
 /* container style */
 #container {
     margin: 0 10% 0 10%;
@@ -59,8 +72,18 @@ $main-color: #E06;
         }
     }
 
-    .CR {
-        padding: 1%;
+    .btn-primary {
+        background-color: $main-color;
+        @extend %button_border
+    }
+
+    .btn-primary:hover {
+        background-color: darken( $main-color, 5%);
+        @extend %button_border;
+    }
+
+    .btn-primary:active, .btn-primary:focus {
+        @extend %click;
     }
 
     footer {

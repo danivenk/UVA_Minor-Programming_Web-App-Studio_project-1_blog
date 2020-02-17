@@ -13,7 +13,7 @@ layout: skeleton
         <a href="{{ post.url }}">
             <h4>{{ post.title }}</h4>
         </a>
-        <time datetime="{{ post.date | date:'%F' }}">{{ post.date | JapaneseDate }}</time>
+        <time datetime="{{ page.date | date:'%F' }}">{{ page.date | date:'%F' }}</time>
         {{ post.excerpt }}
         <a href="{{ post.url }}" 　class="CR">
             読みを続く
