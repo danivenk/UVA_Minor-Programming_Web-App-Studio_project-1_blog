@@ -60,12 +60,6 @@ $main-color: #E06;
     .row {
         margin-top: 2%;
         margin-bottom: 2%;
-
-        img {
-            width: 40%;
-            float: left;
-            margin: 0 5%;
-        }
     }
 
     .btn-primary {
@@ -95,6 +89,18 @@ $main-color: #E06;
         left: 0;
         bottom: 0;
         width: 100%;
+    }
+
+    .error {
+        @extend %alignment;
+
+        img {
+            float: right;
+            position: absolute;
+            height: 5%;
+            bottom: 0;
+            right: 0;
+        }
     }
 
 /* mobile style changes */
