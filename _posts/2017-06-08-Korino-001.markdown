@@ -1,0 +1,10 @@
+---
+layout: post
+title:  "郡野国START"
+date:   2017-06-08 21:35 +0200
+game_date: 1920-01-04
+categories: korino
+excerpt_separator: <!--more-->
+---
+
+郡野国のマップを作りました<!--more-->

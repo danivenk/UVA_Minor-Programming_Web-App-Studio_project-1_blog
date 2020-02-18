@@ -3,6 +3,7 @@
 {% assign RW = "2019-05-01" %}
 {% assign HS = "1989-01-08" %}
 {% assign SW = "1926-12-25" %}
+{% assign custom = include.custom %}
 
 <!-- assign the values of the dates such that they can be compared -->
 {% assign date_test = date | date:'%s' | plus:0 %}
@@ -15,30 +16,40 @@
 {% assign RW_year = RW | date:"%Y" | minus:1 %}
 {% assign HS_year = HS | date:"%Y" | minus:1 %}
 {% assign SW_year = SW | date:"%Y" | minus:1 %}
+{% assign custom_year = custom | date:"%Y" | minus:1 %}
 
 
 <time datetime="{{ date | date:'%F' }}">
-    <!-- check if date falls into Reiwa -->
-    {% if date_test >= RW_test %}
-        {% assign year = date_year | minus:RW_year | plus:0 %}
+    <!-- if custom period is given use that -->
+    {% if custom %}
+        {% assign year = date_year | minus:custom_year | plus:0 %}
         {% case year %}
-        {% when 1 %}令和元年
-        {% else %}令和{{ year }}年
+        {% when 1 %}{{ include.custom_name }}元年
+        {% else %}{{ include.custom_name }}{{ year }}年
         {% endcase %}
-    <!-- check if date falls into Heisei -->
-    {% elsif RW_test > date_test and date_test >= HS_test %}
-        {% assign year = date_year | minus:HS_year | plus:0 %}
-        {% case year %}
-        {% when 1 %}令和元年
-        {% else %}平成{{ year }}年
-        {% endcase %}
-    <!-- check if date falls into Showa -->
     {% else %}
-        {% assign year = date_year | minus:SW_year | plus:0 %}
-        {% case year %}
-        {% when 1 %}昭和元年
-        {% else %}昭和{{ year }}年
-        {% endcase %}
+        <!-- check if date falls into Reiwa -->
+        {% if date_test >= RW_test %}
+            {% assign year = date_year | minus:RW_year | plus:0 %}
+            {% case year %}
+            {% when 1 %}令和元年
+            {% else %}令和{{ year }}年
+            {% endcase %}
+        <!-- check if date falls into Heisei -->
+        {% elsif RW_test > date_test and date_test >= HS_test %}
+            {% assign year = date_year | minus:HS_year | plus:0 %}
+            {% case year %}
+            {% when 1 %}令和元年
+            {% else %}平成{{ year }}年
+            {% endcase %}
+        <!-- check if date falls into Showa -->
+        {% else %}
+            {% assign year = date_year | minus:SW_year | plus:0 %}
+            {% case year %}
+            {% when 1 %}昭和元年
+            {% else %}昭和{{ year }}年
+            {% endcase %}
+        {% endif %}
     {% endif %}
     <!-- print date (month day part) as it is -->
     {{date | date:"%m月%d日" }}

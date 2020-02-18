@@ -5,7 +5,10 @@ layout: skeleton
 <div class="row">
     <div class="col-lg-10 col-sm-12">
         <h1>{{ page.title }}</h1>
-        {% include time.html date=page.date %}
+        日付：{% include time.html date=page.date %}
+        {% if page.game_date %}
+            / ゲーム日付：{% include time.html date=page.game_date custom="1920-01-04" custom_name="郡野" %}
+        {% endif %}
         <hr>
         {{ content }}
     </div>
