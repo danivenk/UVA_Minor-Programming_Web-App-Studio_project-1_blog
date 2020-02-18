@@ -60,21 +60,21 @@ $main-color: #E06;
     .row {
         margin-top: 2%;
         margin-bottom: 2%;
-    }
 
-    .btn-primary {
+        .btn-primary {
         background-color: $main-color !important;
         float: right !important;
         @extend %button_border
-    }
+        }
 
-    .btn-primary:hover {
-        background-color: darken( $main-color, 5%) !important;
-        @extend %button_border;
-    }
+        .btn-primary:hover {
+            background-color: darken( $main-color, 5%) !important;
+            @extend %button_border;
+        }
 
-    .btn-primary:active, .btn-primary:focus {
-        @extend %click;
+        .btn-primary:active, .btn-primary:focus {
+            @extend %click;
+        }
     }
 
     .card {

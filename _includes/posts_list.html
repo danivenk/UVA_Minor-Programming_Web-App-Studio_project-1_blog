@@ -13,11 +13,11 @@
                 <p class="card-text">
                     {{ post.excerpt }}
                 </p>
-                <a href="{{ post.url }}" class="btn btn-primary">
+                <a href="{{ post.url }}" class="btn btn-primary" role="button">
                     読みを続く
                 </a>
             {% else %}
-                <a href="{{ post.url }}" class="btn btn-primary alone">
+                <a href="{{ post.url }}" class="btn btn-primary alone" role="button">
                     投稿を読む
                 </a>
             {% endif %}
@@ -28,6 +28,6 @@
 <!-- if less posts are shown than there are posts, show the "show all" button -->
 {% if site.posts.size > include.max %}
     <div class="col-12">
-        <a href="/posts/">すべてを表示する</a>
+        <a href="/posts/" role="button">すべてを表示する</a>
     </div>
 {% endif %}
