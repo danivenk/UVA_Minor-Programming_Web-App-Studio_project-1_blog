@@ -60,6 +60,7 @@ $main-color: #E06;
     .row {
         margin-top: 2%;
         margin-bottom: 2%;
+        display: block;
     }
 
     .btn-primary {
@@ -97,7 +98,7 @@ $main-color: #E06;
         img {
             float: right;
             position: absolute;
-            height: 5%;
+            height: 80%;
             bottom: 0;
             right: 0;
         }
