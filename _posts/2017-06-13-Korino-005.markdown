@@ -1,0 +1,26 @@
+---
+layout: post
+title:  "始めての鉄道路線"
+date:   2017-06-13 16:10 +0200
+game_date: 1920-03-23
+categories: korino
+excerpt_separator: <!--more-->
+---
+
+天神を成長した。羽沢で羽沢 コジマ店を作りました。道路の建設を完了した（羽沢・天神の間）<!--more-->
+
+都市を成長した：
+  * 中原都：
+    * 天神（人口：1873）
+
+工場を作りました：
+  * 広間県：
+    * 羽沢：
+      * 羽沢 コジマ店：
+        * 消費貨物：電化製品
+
+道路の建設を完了した：
+  * 建設区間：羽沢・天神
+
+郡野国ツイートその003：
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">郡野国更新<br>羽沢と天神を成長しました<br>羽沢でコジマ店を開けました<a href="https://twitter.com/hashtag/simutrans?src=hash&amp;ref_src=twsrc%5Etfw">#simutrans</a> <a href="https://t.co/nxAhpBcSr3">pic.twitter.com/nxAhpBcSr3</a></p>&mdash; danivenk (@danivenk) <a href="https://twitter.com/danivenk/status/846036987870138368?ref_src=twsrc%5Etfw">March 26, 2017</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

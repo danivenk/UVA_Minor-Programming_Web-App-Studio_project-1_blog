@@ -1,0 +1,32 @@
+---
+layout: post
+title:  "始めての鉄道路線"
+date:   2017-06-13 15:52 +0200
+game_date: 1920-03-09
+categories: korino
+excerpt_separator: <!--more-->
+---
+
+羽沢を成長した。秋和千田線を作りました。秋和千田線鉄道路線の建設を完了した（常盤・美山の間、単線区間）。道路の建設を始まりました（羽沢・天神の間）<!--more-->
+
+都市を成長した：
+  * 広間県：
+    * 羽沢（人口：1077）
+
+鉄道路線を作りました：
+  * 秋和鉄道千田線｜普通 常盤-美山
+    * 車両：国鉄キハ40形500番台東北色2両編成
+    * 編成数：01
+    * 停車駅：常盤駅・天神駅・美山駅
+
+鉄道路線の建設を完了した：
+  * 秋和千田線  - あきわせんだせん
+    * 建設区間：常盤・美山
+      * 区間内の駅：常盤・天神・美山
+    * 単線区間
+
+道路の建設を始まりました：
+  * 建設区間：羽沢・天神
+
+郡野国ツイートその002：
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">郡野国更新<br>秋和鉄道が千田線を作りました<br>車両はキハ40の2両車です。<br>現在の千田線は常盤-美山です。<a href="https://twitter.com/hashtag/simutrans?src=hash&amp;ref_src=twsrc%5Etfw">#simutrans</a> <a href="https://t.co/9fDgfb0aWk">pic.twitter.com/9fDgfb0aWk</a></p>&mdash; danivenk (@danivenk) <a href="https://twitter.com/danivenk/status/845989885848768512?ref_src=twsrc%5Etfw">March 26, 2017</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

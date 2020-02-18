@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "始めてのバス停と駅"
+title:  "始めてのバス停・駅・バス路線"
 date:   2017-06-11 22:52 +0200
 game_date: 1920-02-17
 categories: korino
