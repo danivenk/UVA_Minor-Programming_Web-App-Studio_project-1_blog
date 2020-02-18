@@ -3,14 +3,16 @@ layout: skeleton
 ---
 
 <div class="row">
-    <div class="col-sm-10">
+    <div class="col-lg-10 col-sm-12">
         <h1>{{ page.title }}</h1>
-        {% include time.html date=page.date%}
-        {% include time.html date="1999-10-10"%}
-        {% include time.html date="1975-05-04"%}
+        {% include time.html date=page.date %}
         <hr>
         {{ content }}
     </div>
-
-    {% include posts_list.html %}
+    <div class="col-lg-2 col-sm-12">
+        <div class="col-12">
+            <h4>最近の投稿</h4>
+        </div>
+        {% include posts_list.html class="col-12 card" page=page.name max=5 excerpt_available=false %}
+    </div>
 </div>

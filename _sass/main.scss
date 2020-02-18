@@ -9,21 +9,16 @@ $main-color: #E06;
     text-align: center;
 }
 
-/* text color inheritance */
-%black {
-    color: #000;
-}
-
 /* button border color inheritance */
 %button_border {
-    border-color: darken( $main-color, 10%)!important;
+    border-color: darken( $main-color, 10%) !important;
 }
 
 /* button when clicked inheritance */
 %click {
-    background-color: darken( $main-color, 7%)!important;
+    background-color: darken( $main-color, 7%) !important;
     @extend %button_border;
-    box-shadow: 0 0 0 0.2rem lighten( $main-color, 10%)!important;
+    box-shadow: 0 0 0 0.2rem lighten( $main-color, 10%) !important;
 }
 
 
@@ -59,6 +54,7 @@ $main-color: #E06;
 
     h4 {
         font-weight: bold;
+        font-size: 120%;
     }
 
     .row {
@@ -73,17 +69,25 @@ $main-color: #E06;
     }
 
     .btn-primary {
-        background-color: $main-color;
+        background-color: $main-color !important;
         @extend %button_border
     }
 
     .btn-primary:hover {
-        background-color: darken( $main-color, 5%);
+        background-color: darken( $main-color, 5%) !important;
         @extend %button_border;
     }
 
     .btn-primary:active, .btn-primary:focus {
         @extend %click;
+    }
+
+    .alone {
+        margin: 10% 0 -10% 0;
+    }
+
+    .card {
+        font-size: 80%;
     }
 
     footer {

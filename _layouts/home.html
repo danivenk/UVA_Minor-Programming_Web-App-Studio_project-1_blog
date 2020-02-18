@@ -8,16 +8,5 @@ layout: skeleton
     </div>
 </div>
 <div class="row">
-    {% for post in site.posts limit: 5 %}
-    <div class="col-sm-12">
-        <a href="{{ post.url }}">
-            <h4>{{ post.title }}</h4>
-        </a>
-        <time datetime="{{ page.date | date:'%F' }}">{{ page.date | date:'%F' }}</time>
-        {{ post.excerpt }}
-        <a href="{{ post.url }}" 　class="CR">
-            読みを続く
-        </a>
-    </div>
-    {% endfor %}
+    {% include posts_list.html class="col-12 card" page=page.name max=5 excerpt_available=true %}
 </div>
