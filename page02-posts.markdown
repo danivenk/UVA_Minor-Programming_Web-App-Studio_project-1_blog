@@ -1,6 +1,6 @@
 ---
 layout: post_page
-title: Posts
+title: すべての投稿
 permalink: /posts/
 ---
 
