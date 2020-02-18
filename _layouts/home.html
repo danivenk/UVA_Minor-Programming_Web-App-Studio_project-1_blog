@@ -2,11 +2,14 @@
 layout: skeleton
 ---
 
+<!-- create a row with the content -->
 <div class="row">
     <div class="col-sm-12">
         {{ content }}
     </div>
 </div>
+
+<!-- create a row with the 5 newest posts with excerpt -->
 <div class="row">
     {% include posts_list.html class="col-12 card" page=page.name max=5 excerpt_available=true %}
 </div>

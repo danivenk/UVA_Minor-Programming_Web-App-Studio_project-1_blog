@@ -64,6 +64,7 @@ $main-color: #E06;
 
     .btn-primary {
         background-color: $main-color !important;
+        float: right !important;
         @extend %button_border
     }
 
@@ -76,14 +77,15 @@ $main-color: #E06;
         @extend %click;
     }
 
-    .alone {
-        margin: 10% 0 -10% 0;
-    }
-
     .card {
         font-size: 80%;
+
+        .card-body {
+            padding: 1.25rem 0;
+        }
     }
 
+    /* footer */
     footer {
         @extend %alignment;
         left: 0;
@@ -91,15 +93,15 @@ $main-color: #E06;
         width: 100%;
     }
 
+
+    /* error page */
     .error {
         @extend %alignment;
 
         img {
             float: right;
-            position: absolute;
+            position: relative;
             height: 80%;
-            bottom: 0;
-            right: 0;
         }
     }
 
@@ -112,17 +114,5 @@ $main-color: #E06;
     .nav-link {
         padding-top: 5%;
         padding-bottom: 5%;
-    }
-
-    .row {
-        img {
-            width: 90%;
-            margin: 0 5% 2% 5%;
-        }
-
-        .img {
-            max-width: 100%!important;
-            flex: 0 0 100%!important;
-        }
     }
 }
