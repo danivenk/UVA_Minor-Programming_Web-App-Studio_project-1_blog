@@ -12,7 +12,7 @@
             integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
         <!-- icon inclusion -->
-        <link rel="icon" href="img/icon.jpg">
+        <link rel="icon" href="/assets/img/icon.png">
 
         <!-- style and js inclusion -->
         <link href="/assets/style/styles.css" rel="stylesheet">
@@ -33,7 +33,7 @@
                         <!-- create a link for each page (non-post) on the site -->
                         {% for page in site.html_pages %}
                             {% if page.title != nil %}
-                                <a class="nav-item nav-link" href="{{ page.url }}">{{ page.title}}</a>
+                                <a class="nav-item nav-link" href="{{ page.url }}">{{ page.title }}</a>
                             {% endif %}
                         {% endfor %}
 
