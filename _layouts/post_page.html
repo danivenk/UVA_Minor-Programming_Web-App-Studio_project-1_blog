@@ -9,5 +9,6 @@ layout: skeleton
         <hr>
         {{ content }}
     </div>
-    {% include posts_list.html class="col-lg-4 col-sm-12 card" page=page.name max=site.posts.size excerpt_available=true %}
+    {% include posts_list.html class="col-lg-4 col-sm-12 card" page=page.name
+        max=site.posts.size excerpt_available=true %}
 </div>

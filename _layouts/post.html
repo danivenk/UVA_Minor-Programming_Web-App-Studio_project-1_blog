@@ -2,21 +2,25 @@
 layout: skeleton
 ---
 
-<!-- create row with title date/ingame date content and the 5 most recent posts without excerpt -->
+<!-- create row with title date/ingame date content and the 5 most recent
+    posts without excerpt -->
 <div class="row">
     <div class="col-lg-10 col-sm-12">
         <h1>{{ page.title }}</h1>
         日付：{% include time.html date=page.date %}
         {% if page.game_date %}
-            / ゲーム日付：{% include time.html date=page.game_date custom="1920-01-04" custom_name="郡野" %}
+            / ゲーム日付：{% include time.html date=page.game_date
+                                custom="1920-01-04" custom_name="郡野" %}
         {% endif %}
         <hr>
         {{ content }}
     </div>
+
     <div class="col-lg-2 col-sm-12">
         <div class="col-12">
             <h4>最近の投稿</h4>
         </div>
-        {% include posts_list.html class="col-12 card" page=page.name max=5 excerpt_available=false %}
+        {% include posts_list.html class="col-12 card" page=page.name max=5
+            excerpt_available=false %}
     </div>
 </div>

@@ -40,7 +40,7 @@ _sass:
 
 assets:
   * img:
-      contains all images
+      contains all images, source: https://i-ogp.pximg.net/c/540x540_70/img-master/img/2011/11/06/03/12/38/22876424_p0_square1200.jpg
   * style:
       contains the scss file such that scss will be converted and also the location where to link from the skeleton to
 
@@ -60,3 +60,7 @@ about markdown:
    contains the content of the about (title: _about_ (ブログに付いて), permalink:/about/) WARNING: __the links in this content link to external websites, if you'd like to go back use the back button on the browser__
 
 It is live at: http://proj-1.mprog.hakkajiten.com/
+
+Feedback Maarten Schröder:
+   * Enter before comments
+   * A little more enters between code

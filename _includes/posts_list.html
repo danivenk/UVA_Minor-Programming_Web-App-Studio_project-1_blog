@@ -1,14 +1,18 @@
 <!-- loop over specified amount of posts -->
 {% for post in site.posts limit:include.max %}
+
     <!-- put each post preview in a card -->
     <div class="{{ include.class }}">
         <div class="card-body">
+
             <!-- show title date and if specified excerpt text -->
             <a href="{{ post.url }}">
                 <h4 class="card-title">{{ post.title }}</h4>
             </a>
             {% include time.html date=post.date %}
-            <!-- change button from read post, to continue reading if excerpt text is specified -->
+
+            <!-- change button from read post, to continue reading if excerpt
+                    text is specified -->
             {% if include.excerpt_available %}
                 <p class="card-text">
                     {{ post.excerpt }}
@@ -17,7 +21,8 @@
                     読みを続く
                 </a>
             {% else %}
-                <a href="{{ post.url }}" class="btn btn-primary alone" role="button">
+                <a href="{{ post.url }}" class="btn btn-primary alone"
+                        role="button">
                     投稿を読む
                 </a>
             {% endif %}
