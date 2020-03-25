@@ -61,6 +61,7 @@ about markdown:
 
 It is live at: http://proj-1.mprog.hakkajiten.com/
 
-Feedback Maarten Schröder:
-   * Enter before comments
-   * A little more enters between code
+Personal Touch:
+  * my personal touch in this application the time include, it takes a date and converts it to the format of the Japanese imperial era.
+    This means from YYYY-MM-DD to Era YY-MM-DD (here Era YY is the number of years since the start of the era and the next year begins on 01/01)
+    if the date of an era is given and a name of this era it can conver it the same way but with the custom era.
